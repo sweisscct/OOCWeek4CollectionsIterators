@@ -91,8 +91,13 @@ public class CollectionsIterators {
         System.out.println(printQ.contains("sam"));
         System.out.println(printQ.contains("Sam "));
         
-        printQ.clear();
+//        printQ.clear();
+//        System.out.println(printQ);
+//        System.out.println(printQ.size());
+
         System.out.println(printQ);
-        System.out.println(printQ.size());
+        printQ.forEach(document -> {
+            System.out.println(document);
+        });
     }
 }
