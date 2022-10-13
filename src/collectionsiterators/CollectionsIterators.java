@@ -48,9 +48,15 @@ public class CollectionsIterators {
         ArrayList<Circle> circleArray = new ArrayList<>();
         
         List<String> printQ = new ArrayList<>();
+        // use Integer instad of int
         List<Integer> nums = new ArrayList<>();
         nums.add(1);
         System.out.println(nums);
         
+        printQ.add("Class List");
+        printQ.add("Homeworks");
+        printQ.add("Cool Map");
+        printQ.add("Train Timetable");
+        System.out.println(printQ);
     }
 }
