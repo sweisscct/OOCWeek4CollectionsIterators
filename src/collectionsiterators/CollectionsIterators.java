@@ -32,5 +32,15 @@ public class CollectionsIterators {
         // Remember: Java starts counting from 0
         colours[1] = "Red";
         System.out.println(Arrays.toString(colours));
+        
+        Rectangle[] rectArray = {rect1, rect2};
+        System.out.println(rectArray[0].calculateArea());
+        System.out.println(rectArray[1].calculateArea());
+        
+        System.out.println("Need a better way...");
+        
+        for (Rectangle rect : rectArray) {
+            System.out.println(rect.calculateArea());
+        }
     }
 }
