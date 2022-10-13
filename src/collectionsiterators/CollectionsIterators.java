@@ -6,6 +6,7 @@ package collectionsiterators;
 
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.List;
 
 /**
@@ -99,5 +100,21 @@ public class CollectionsIterators {
         printQ.forEach(document -> {
             System.out.println(document);
         });
+        
+        Iterator<String> printQItem = printQ.iterator();
+        System.out.println(printQItem);
+        System.out.println(printQItem.next());
+        System.out.println(printQItem.next());
+        printQItem.remove();
+        System.out.println(printQItem.next());
+        System.out.println(printQ);
+        printQItem.forEachRemaining(item -> {
+            System.out.println(item);
+        });
+        
+        printQItem = printQ.iterator();
+        printQItem.forEachRemaining(item -> {
+            System.out.println(item);
+        });       
     }
 }
