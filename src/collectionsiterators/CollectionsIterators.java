@@ -4,7 +4,9 @@
  */
 package collectionsiterators;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 /**
  *
@@ -42,5 +44,13 @@ public class CollectionsIterators {
         for (Rectangle rect : rectArray) {
             System.out.println(rect.calculateArea());
         }
+        
+        ArrayList<Circle> circleArray = new ArrayList<>();
+        
+        List<String> printQ = new ArrayList<>();
+        List<Integer> nums = new ArrayList<>();
+        nums.add(1);
+        System.out.println(nums);
+        
     }
 }
