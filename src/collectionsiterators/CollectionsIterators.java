@@ -4,6 +4,8 @@
  */
 package collectionsiterators;
 
+import java.util.Arrays;
+
 /**
  *
  * @author Administrator
@@ -16,28 +18,19 @@ public class CollectionsIterators {
     public static void main(String[] args) {
         Rectangle rect1 = new Rectangle();
         Rectangle rect2 = new Rectangle(true, "Orange", 2, 3);
-        
-        System.out.println(rect1);
-        System.out.println(rect2);
-        System.out.println(rect1.getColour());
-        System.out.println(rect2.getColour());
-        System.out.println(Double.toString(rect1.getHeight()));
-        System.out.println(rect2.getHeight());
-        
         Circle circle1 = new Circle();
         Circle circle2 = new Circle(true, "Blue", 8);
-        System.out.println(circle1.calculateArea());
-        System.out.println(circle2.calculateArea());
-        
         Box box1 = new Box();
-        System.out.println(box1.calculateArea());
-        System.out.println(box1.calculateVolume());
-        
         Sphere sphere1 = new Sphere();
-        System.out.println(sphere1.calculateArea());
-        System.out.println(sphere1.calculateVolume());
         
-        box1.sayHello();
-        sphere1.sayHello();
+        String[] names = {"Sam", "Sean", "Jessica"};
+        System.out.println(names);
+        System.out.println(Arrays.toString(names));
+        
+        String[] colours = new String[5];
+        System.out.println(Arrays.toString(colours));
+        // Remember: Java starts counting from 0
+        colours[1] = "Red";
+        System.out.println(Arrays.toString(colours));
     }
 }
