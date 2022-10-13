@@ -58,5 +58,41 @@ public class CollectionsIterators {
         printQ.add("Cool Map");
         printQ.add("Train Timetable");
         System.out.println(printQ);
+        
+        printQ.add(0, "QR Code");
+        System.out.println(printQ);
+        
+        printQ.set(3, "Terrible Map");
+        System.out.println(printQ);
+        
+        System.out.println(printQ.size());
+        
+        printQ.remove(0);
+        System.out.println(printQ);
+        System.out.println(printQ.size());
+        
+        printQ.remove("Terrible Map");
+        System.out.println(printQ);
+        System.out.println(printQ.size());
+        
+        printQ.add(2,"Sam");
+        printQ.add("Sam");
+        System.out.println(printQ);
+        System.out.println(printQ.size());
+        
+        printQ.remove("Sam");
+        System.out.println(printQ);
+        System.out.println(printQ.size());
+        
+        System.out.println(printQ.get(printQ.size()-2));
+        
+        System.out.println(printQ.contains("Sam"));
+        System.out.println(printQ.contains("Sean"));
+        System.out.println(printQ.contains("sam"));
+        System.out.println(printQ.contains("Sam "));
+        
+        printQ.clear();
+        System.out.println(printQ);
+        System.out.println(printQ.size());
     }
 }
